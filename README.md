@@ -1,6 +1,6 @@
 # ForeshockLangmuirWaves
 
-Scripts and data files required to reproduce the figures in the paper "Plasma frequency waves in Earth's electron foreshock" by D. B. Graham et al.
+Scripts and data files required to reproduce the figures in the paper "Plasma frequency waves in Earth's electron foreshock" by D. B. Graham, et al.
 
 # Abstract
 
