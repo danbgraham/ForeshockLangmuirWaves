@@ -100,8 +100,8 @@ set(h(3),'yscale','log')
 hold(h(3),'on')
 plot(h(3),xline,yline,'r--')
 hold(h(3),'off')
-xlabel(h(3),'\chi^2_{r,P} moms','Interpreter','tex')
-ylabel(h(3),'\chi^2_{r,SGT} mons','Interpreter','tex')
+ylabel(h(3),'\chi^2_{r,P} moms','Interpreter','tex')
+xlabel(h(3),'\chi^2_{r,SGT} moms','Interpreter','tex')
 xticks(h(3),[1e0 1e1 1e2 1e3 1e4])
 irf_legend(h(3),'(c)',[0.90, 0.99],'color','k','fontsize',18);
 
@@ -114,8 +114,8 @@ set(h(4),'yscale','log')
 hold(h(4),'on')
 plot(h(4),xline,yline,'r--')
 hold(h(4),'off')
-xlabel(h(4),'\chi^2_{r,P} fit','Interpreter','tex')
-ylabel(h(4),'\chi^2_{r,SGT} fit','Interpreter','tex')
+ylabel(h(4),'\chi^2_{r,P} fit','Interpreter','tex')
+xlabel(h(4),'\chi^2_{r,SGT} fit','Interpreter','tex')
 xticks(h(4),[1e0 1e1 1e2 1e3 1e4])
 irf_legend(h(4),'(d)',[0.90, 0.99],'color','k','fontsize',18);
 

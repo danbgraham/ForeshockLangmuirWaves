@@ -53,8 +53,8 @@ xwidth = 0.375;
 ywidth = 0.38;
 
 set(fn,'Position',[10 10 750 600])
-    h(1)=axes('position',[0.085 0.615 xwidth ywidth]); % [x y dx dy]
-    h(2)=axes('position',[0.59 0.615 xwidth ywidth]);
+    h(1)=axes('position',[0.085 0.610 xwidth ywidth]); % [x y dx dy]
+    h(2)=axes('position',[0.59 0.610 xwidth ywidth]);
     h(3)=axes('position',[0.085 0.11 xwidth ywidth]);
     h(4)=axes('position',[0.59 0.11 xwidth ywidth]);
     ud=get(fn,'userdata');
@@ -75,7 +75,7 @@ hold(h(1),'off')
 xlabel(h(1),'\chi^2_{r,SGT} moms','Interpreter','tex')
 ylabel(h(1),'\chi^2_{r,SGT} fit','Interpreter','tex')
 xticks(h(1),[1e0 1e1 1e2 1e3 1e4])
-irf_legend(h(1),'(a)',[0.90, 0.99],'color','k','fontsize',14);
+irf_legend(h(1),'(a)',[0.90, 0.99],'color','k','fontsize',18);
 
 pcolor(h(2),xvecpears,yvecpears,countspears);
 shading(h(2),'flat');
@@ -89,7 +89,7 @@ hold(h(2),'off')
 xlabel(h(2),'\chi^2_{r,P} moms','Interpreter','tex')
 ylabel(h(2),'\chi^2_{r,P} fit','Interpreter','tex')
 xticks(h(2),[1e0 1e1 1e2 1e3 1e4])
-irf_legend(h(2),'(b)',[0.90, 0.99],'color','k','fontsize',14);
+irf_legend(h(2),'(b)',[0.90, 0.99],'color','k','fontsize',18);
 
 pcolor(h(3),xvecmoms,yvecmoms,countsmoms);
 shading(h(3),'flat');
@@ -100,10 +100,10 @@ set(h(3),'yscale','log')
 hold(h(3),'on')
 plot(h(3),xline,yline,'r--')
 hold(h(3),'off')
-xlabel(h(3),'\chi^2_{r,P} moms','Interpreter','tex')
-ylabel(h(3),'\chi^2_{r,SGT} mons','Interpreter','tex')
+ylabel(h(3),'\chi^2_{r,P} moms','Interpreter','tex')
+xlabel(h(3),'\chi^2_{r,SGT} moms','Interpreter','tex')
 xticks(h(3),[1e0 1e1 1e2 1e3 1e4])
-irf_legend(h(3),'(c)',[0.90, 0.99],'color','k','fontsize',14);
+irf_legend(h(3),'(c)',[0.90, 0.99],'color','k','fontsize',18);
 
 pcolor(h(4),xvecfit,yvecfit,countsfit);
 shading(h(4),'flat');
@@ -114,10 +114,10 @@ set(h(4),'yscale','log')
 hold(h(4),'on')
 plot(h(4),xline,yline,'r--')
 hold(h(4),'off')
-xlabel(h(4),'\chi^2_{r,P} fit','Interpreter','tex')
-ylabel(h(4),'\chi^2_{r,SGT} fit','Interpreter','tex')
+ylabel(h(4),'\chi^2_{r,P} fit','Interpreter','tex')
+xlabel(h(4),'\chi^2_{r,SGT} fit','Interpreter','tex')
 xticks(h(4),[1e0 1e1 1e2 1e3 1e4])
-irf_legend(h(4),'(d)',[0.90, 0.99],'color','k','fontsize',14);
+irf_legend(h(4),'(d)',[0.90, 0.99],'color','k','fontsize',18);
 
 
 set(gcf,'color','w')
